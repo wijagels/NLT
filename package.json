@@ -1,0 +1,19 @@
+{
+  "name": "NeverLeaveTerminal",
+  "version": "0.0.1",
+  "description": "Never ever leave the terminal.  It's scary out there in the graphical world.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wijagels/hacknys15.git"
+  },
+  "author": "Tim Hung and William Jagels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wijagels/hacknys15/issues"
+  },
+  "homepage": "https://github.com/wijagels/hacknys15"
+}

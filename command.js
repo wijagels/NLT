@@ -1,5 +1,6 @@
 var exports = module.exports = {};
 var giphy = require('./giphy.js');
+var utils = require('./utils.js');
 
 exports.parseCommand = function(line){
 	var words = line.split(" ");
@@ -23,6 +24,9 @@ exports.parseCommand = function(line){
         case "orderx":
         //do thing
         break;
+        case "convert":
+            utils.toAscii(query);
+            break;
         default:
     	//do thing
     }

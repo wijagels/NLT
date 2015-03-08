@@ -16,3 +16,8 @@ exports.getImage = function(url) {
         });
     });
 }
+
+exports.toAscii = function(cmd) {
+    var url = cmd.split(' ');
+    exports.getImage(url[2]);
+}

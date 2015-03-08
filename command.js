@@ -14,7 +14,7 @@ exports.parseCommand = function(line){
     switch (words[0].toLowerCase()) {
         case "help":
             help = file.readFileSync(__dirname + '/txt/help.txt');
-            cli.output("\n" + help + "\n");
+            console.log("\n" + help + "\n");
             break;
         case "giphy":
             giphy.parseCommand(query);
@@ -32,6 +32,7 @@ exports.parseCommand = function(line){
             //do thing
             break;
         case "twilio":
+            twilio.parseCommand(query);
             break;
         case "convert":
             utils.toAscii(query);

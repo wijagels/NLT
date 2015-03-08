@@ -14,7 +14,7 @@ logo = file.readFileSync(__dirname + '/txt/logo.txt');
 cli.output("\n" + logo + "\n\n");
 
 cli.withInput(function(line, newline, eof) {
-    getImage(line);
+    //call in command.js parseCommand(line);
 });
 
 var getImage = function(url) {

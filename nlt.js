@@ -3,6 +3,8 @@
 var cli = require('cli');
 var ImageToAscii = require('image-to-ascii');
 var Download = require('download');
+var etsyjs = require('etsy-js');
+var client = etsyjs.client(keys.ETSY_KEY);
 
 
 cli.withInput(function(line, newline, eof) {

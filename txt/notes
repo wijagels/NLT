@@ -7,7 +7,7 @@ nlt
 
 	help
 
-	
+
 giphy?
 	search gifs
 	gifs to animated ascii
@@ -15,6 +15,9 @@ giphy?
 Very Viable
 	etsy
 		browse etsy store
+			search
+			category
+			random
 		image to ascii
 		search
 

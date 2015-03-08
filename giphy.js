@@ -4,7 +4,7 @@ exports.parseCommand = function(words) {
     switch (words[0].toLowerCase()) {
         case "search":
             var query = words.slice(1, words.length).toString().replace(',', ' + ');
-            console.log("giphy search: " + query);
+            console.log("giphy searching for : " + query);
             break;
         default:
             console.log("no matched command for giphy found.");

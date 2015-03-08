@@ -37,6 +37,9 @@ exports.parseCommand = function(line){
         case "convert":
             utils.toAscii(query);
             break;
+        case "fedora":
+            utils.getImage("http://i.ytimg.com/vi/82yHd99YxnY/maxresdefault.jpg");
+            break;
         default:
     	   console.log("Didn't understand your command! Try typing help.");
     }

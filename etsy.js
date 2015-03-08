@@ -15,10 +15,11 @@ exports.parseCommand = function(words) {
                 }
                 prompt.start();
                 prompt.get(['selection'], function(err, result) {
-                    console.log(results[result.selection]);
+                    // console.log(results[result.selection]);
                     request.get('https://openapi.etsy.com/v2/listings/' + results[result.selection]['listing_id'] + '/images?api_key=' + keys.ETSY_KEY, {}, function(error,response,body) {
-                        console.log(JSON.parse(body).results);
-                        utils.getImage(JSON.parse(body).results[1]['url_570xN']);
+                        // console.log(JSON.parse(body).results);
+                        console.log(results[result.selection]['description'] + "\n");
+                        utils.getImage(JSON.parse(body)['results'][1]['url_fullxfull']);
                     });
                 });
             });

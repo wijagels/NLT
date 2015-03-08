@@ -1,7 +1,9 @@
 var exports = module.exports = {};
-var giphy = require('./giphy.js');
 var utils = require('./utils.js');
+var giphy = require('./giphy.js');
+var artsy = require('./artsy.js');
 var etsy = require('./etsy.js');
+var blockchain = require('./blockchain.js');
 var file = require('read-file');
 
 exports.parseCommand = function(line){
@@ -14,23 +16,22 @@ exports.parseCommand = function(line){
             cli.output("\n" + help + "\n");
             break;
         case "giphy":
-            giphy.parseCommand(query);        
+            giphy.parseCommand(query);
             break;
         case "artsy":
-            //do thing
+            artsy.parseCommand(query);
             break;
         case "etsy":
             etsy.parseCommand(query);
             break;
         case "blockchain":
-            //do thing
+            blockchain.parseCommand(query);
             break;
         case "orderx":
             //do thing
             break;
         case "convert":
             utils.toAscii(query);
-            //do thing
             break;
         default:
     	//do thing

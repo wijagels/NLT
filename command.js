@@ -1,6 +1,7 @@
 var exports = module.exports = {};
+var giphy = require('./giphy.js');
 
-exports.parseCommand = function(String line){
+exports.parseCommand = function(line){
 	var words = line.split(" ");
 
     switch (words[0].toLowerCase()) {
@@ -8,7 +9,7 @@ exports.parseCommand = function(String line){
         //do thing
         break;
     case "giphy":
-        //do thing
+        giphy.parseCommand(words.slice(1, words.length));        
         break;
     case "artsy":
         //do thing

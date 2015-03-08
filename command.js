@@ -5,26 +5,27 @@ exports.parseCommand = function(line){
 	var words = line.split(" ");
 
     switch (words[0].toLowerCase()) {
-    case "help":
+        case "help":
         //do thing
         break;
-    case "giphy":
+        case "giphy":
         giphy.parseCommand(words.slice(1, words.length));        
         break;
-    case "artsy":
+        case "artsy":
         //do thing
         break;
-    case "etsy":
+        case "etsy":
         //do thing
         break;
-    case "blockchain":
+        case "blockchain":
         //do thing
         break;
-    case "orderx":
+        case "orderx":
         //do thing
         break;
-    default:
+        default:
     	//do thing
+    }
 
 
 }

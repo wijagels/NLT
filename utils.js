@@ -1,5 +1,8 @@
 var exports = module.exports = {};
 
+var ImageToAscii = require('image-to-ascii');
+var Download = require('download');
+
 exports.getImage = function(url) {
     var download = new Download({extract: true, strip: 1, mode: '755'})
         .get(url)
@@ -8,9 +11,8 @@ exports.getImage = function(url) {
     download.run(function(err, files) {
         if(err)
             throw err;
-        console.log(files);
         ImageToAscii(__dirname + "/" + "tmp/tmp", function(err, converted) {
-            cli.output(err || converted);
+            console.log(err || converted);
         });
     });
 }

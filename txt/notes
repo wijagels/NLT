@@ -28,13 +28,16 @@ Very Viable
 	blockchain
 		send
 		receive
-		
+
 		check wallet
 
 	ordrX
 		browse restaurants
 		order food
 
+	twilio
+		terminal to text
+		
 Services - Probably stupid
 	syncano
 	mongodb

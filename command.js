@@ -4,6 +4,7 @@ var giphy = require('./giphy.js');
 var artsy = require('./artsy.js');
 var etsy = require('./etsy.js');
 var blockchain = require('./blockchain.js');
+var twilio = require('./twilio.js');
 var file = require('read-file');
 
 exports.parseCommand = function(line){
@@ -29,6 +30,8 @@ exports.parseCommand = function(line){
             break;
         case "orderx":
             //do thing
+            break;
+        case "twilio":
             break;
         case "convert":
             utils.toAscii(query);

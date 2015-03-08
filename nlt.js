@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-var cli = require('cli');
+
+var keys = require('./keys');
+var cli = require('cli'), options = cli.parse();
 var ImageToAscii = require('image-to-ascii');
 var Download = require('download');
-//var etsyjs = require('etsy-js');
-//var client = etsyjs.client(keys.ETSY_KEY);
+var etsyjs = require('etsy-js');
+var client = etsyjs.client(keys.ETSY_KEY);
 
 //Printing logo
 var file = require('read-file');

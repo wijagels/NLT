@@ -10,7 +10,7 @@ var command = require('./command.js');
 //Printing logo
 var file = require('read-file');
 logo = file.readFileSync(__dirname + '/txt/logo.txt');
-cli.output("\n\e[31m" + logo + "\e[0m\n\n");
+cli.output("\n" + logo + "\n\n");
 
 cli.withInput(function(line, newline, eof) {
     command.parseCommand(line);

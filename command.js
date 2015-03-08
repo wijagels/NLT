@@ -38,6 +38,6 @@ exports.parseCommand = function(line){
             utils.toAscii(query);
             break;
         default:
-    	   console.log("Didn't understand your command!  Try typing help.");
+    	   console.log("Didn't understand your command! Try typing help.");
     }
 }

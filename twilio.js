@@ -3,7 +3,7 @@ var client = require('twilio')(keys.TWILIOSID, keys.TWILIOTOKEN);
 
 exports.parseCommand = function(words) {
     var number = words[1];
-    var message = words.slice(2, words.length).toString().replace(',', ' ')
+    var message = words.slice(2, words.length).toString().replace(',', ' ');
     switch (words[0].toLowerCase()) {
         case "send":
             this.sendMessage(number, message);

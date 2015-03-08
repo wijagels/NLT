@@ -18,6 +18,6 @@ exports.getImage = function(url) {
 }
 
 exports.toAscii = function(cmd) {
-    var url = cmd.split(' ');
-    exports.getImage(url[2]);
+    var url = cmd.toString().split(' ');
+    exports.getImage(cmd.toString());
 }

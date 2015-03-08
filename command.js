@@ -33,8 +33,6 @@ exports.parseCommand = function(line){
             //do thing
             break;
         default:
-    	//do thing
+    	   console.log("Didn't understand your command!  Try typing help.");
     }
-
-
 }

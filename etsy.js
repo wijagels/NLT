@@ -1,4 +1,6 @@
 var exports = module.exports = {};
+var etsyjs = require('etsy-js');
+var client = etsyjs.client(keys.ETSY_KEY);
 
 exports.parseCommand = function(words) {
     var query = words.slice(1, words.length).toString().replace(',', ' ');
@@ -18,3 +20,7 @@ exports.parseCommand = function(words) {
 }
 
 //Functions:
+
+exports.random = function() {
+
+}

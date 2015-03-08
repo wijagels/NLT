@@ -3,8 +3,6 @@
 
 var keys = require('./keys');
 var cli = require('cli'), options = cli.parse();
-var etsyjs = require('etsy-js');
-var client = etsyjs.client(keys.ETSY_KEY);
 var utils = require('./utils.js');
 var command = require('./command.js');
 

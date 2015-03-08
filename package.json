@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/wijagels/hacknys15/issues"
   },
-  "homepage": "https://github.com/wijagels/hacknys15"
+  "homepage": "https://github.com/wijagels/hacknys15",
+  "dependencies": {
+    "blockchain.info": "^1.1.1",
+    "cli": "^0.6.5",
+    "download": "^4.0.1",
+    "image-to-ascii": "^1.3.0",
+    "mongodb": "^1.4.33",
+    "ordrin-api": "^1.0.2"
+  }
 }

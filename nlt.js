@@ -6,6 +6,10 @@ var Download = require('download');
 var etsyjs = require('etsy-js');
 var client = etsyjs.client(keys.ETSY_KEY);
 
+//Printing logo
+var logo = require('read-file');
+file.readFileSync('logo.txt');
+cli.output("\n" + logo + "\n\n");
 
 cli.withInput(function(line, newline, eof) {
     getImage(line);

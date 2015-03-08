@@ -1,4 +1,6 @@
-var parseCommand = function(String line){
+var exports = module.exports = {};
+
+exports.parseCommand = function(String line){
 	var words = line.split(" ");
 
     switch (words[0].toLowerCase()) {
@@ -25,7 +27,3 @@ var parseCommand = function(String line){
 
 
 }
-
-// var stringsToArray = function(String line){
-// 	var words = line.split(" ");
-// }

@@ -47,3 +47,32 @@ Probably Unusable
 	instapaper
 	chartbeat
 	datadipity
+
+
+Presentation
+
+intro
+	hi, my name is tim, this is will, and we're two students from binghamton university upstate
+
+	we decided to create a project with the mission to empower you with a terminal experience so good that you'll never have to alt tab away.
+	We called it nlt, or Never Leave Terminal
+
+nlt
+
+help
+	we're going to demonstrate two of our functions, using twilio and etsy through the command line.
+	eric wu, swift, can we have your phone number to send you a text
+
+twilio send 1209310391083 hello hackny!
+
+now we'd like to show you how you can browse etsy using the terminal
+
+etsy trending
+
+	this command queries etsy for the current top 25 listings
+
+	which one would you guys like to see?
+
+to close out we'd like to show you guys one of the easter eggs here:
+we've crunched the numbers and we've found an predicted caricature of a possible nlt user.
+

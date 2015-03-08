@@ -3,12 +3,12 @@
 var cli = require('cli');
 var ImageToAscii = require('image-to-ascii');
 var Download = require('download');
-var etsyjs = require('etsy-js');
-var client = etsyjs.client(keys.ETSY_KEY);
+//var etsyjs = require('etsy-js');
+//var client = etsyjs.client(keys.ETSY_KEY);
 
 //Printing logo
-var logo = require('read-file');
-file.readFileSync('logo.txt');
+var file = require('read-file');
+logo = file.readFileSync(__dirname + '/txt/logo.txt');
 cli.output("\n" + logo + "\n\n");
 
 cli.withInput(function(line, newline, eof) {

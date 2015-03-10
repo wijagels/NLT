@@ -40,6 +40,8 @@ exports.parseCommand = function(line){
         case "fedora":
             utils.getImage("http://i.ytimg.com/vi/82yHd99YxnY/maxresdefault.jpg");
             break;
+        case "gif":
+            utils.gif("http://media.giphy.com/media/Pij3hAnY2TNn2/giphy.gif");
         default:
     	   console.log("Didn't understand your command! Try typing help.");
     }
